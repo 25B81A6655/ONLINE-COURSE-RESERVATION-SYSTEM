@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Reservation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2563eb;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        h2 {
+            color: #2563eb;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Online Course Reservation System</h1>
+    <p>Reserve your preferred course online</p>
+</header>
+
+<div class="container">
+    <h2>Available Courses</h2>
+
+    <ul>
+        <li>Web Development - ₹5000</li>
+        <li>Python Programming - ₹4000</li>
+        <li>Data Science - ₹7000</li>
+        <li>Java Programming - ₹4500</li>
+    </ul>
+
+    <h2>Course Reservation</h2>
+
+    <form>
+        <label for="name">Student Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="course">Select Course</label>
+        <select id="course" required>
+            <option value="">-- Select a Course --</option>
+            <option>Web Development</option>
+            <option>Python Programming</option>
+            <option>Data Science</option>
+            <option>Java Programming</option>
+        </select>
+
+        <label for="date">Preferred Start Date</label>
+        <input type="date" id="date" required>
+
+        <button type="submit">Reserve Course</button>
+    </form>
+</div>
+
+</body>
+</html>
